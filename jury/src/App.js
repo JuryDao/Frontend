@@ -1,19 +1,13 @@
-import Header from './components/header';
-import Features from './components/features';
-import Footer from './components/footer';
-import Solves from './components/solves';
 import './App.css';
+import Pag from './FrontPage';
+import LoginPage from './components/login/login'; // Import your login page component
+import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Features />
-      <Solves />
-      <Footer />
-
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Pag />} />
+      <Route path="/login" element={<LoginPage />} />
+    </Routes>
+  );
 }
-
- 

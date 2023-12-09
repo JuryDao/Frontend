@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -49,7 +50,9 @@ const Header = () => {
           <div className="w-[1075px] h-[183px]  text-white text-[58px] font-black font-['Martel'] leading-[65px] tracking-tight">Empower Justice, One Block at a <br/>Time with LegalChain</div>
           <div className="w-[979px] h-[89px] pl-14 text-white text-xl font-medium font-['Montserrat'] leading-[30px] tracking-tight">Transforming Legal Technology with Blockchain Innovation.Empowers the seamless selection of the jurors for a legal case. Bringing the best of web2 and web3 world.</div>
           <div class="w-[155px] h-12 px-9 py-2.5 rounded-[37px] border border-white flex-col justify-start items-center gap-2.5 inline-flex">
-            <div class="text-center text-white text-sm font-bold font-['Open Sans'] leading-7 tracking-tight">Learn More</div>
+            <div class="text-center text-white text-sm font-bold font-['Open Sans'] leading-7 tracking-tight">
+                <Link to="/signup">Join Channel</Link>
+            </div>
           </div>
         </div>
         
